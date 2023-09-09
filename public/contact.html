@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hossein nanakar | حسین نعناکار" />
+    <meta
+      name="description"
+      content="خرید فروش طلاهای نو، کارکرده و انواع سکه های طلا اعم از پارسیان و امامی"
+    />
+    <title>Nanakar Gold</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body>
+    <div class="">
+      <div class="h-full min-h-screen">
+        <div class="flex relative flex-col min-h-screen">
+          <header
+            class="sticky top-0 w-full z-auto transiton-all duration-100 ease-out backdrop-blur-2xl blur-0 opacity-100 py-1 md:px-2 md:py-0"
+          >
+            <nav
+              class="flex md:justify-between p-1 md:items-center md:max-w-7xl md:mx-auto items-center justify-between"
+            >
+              <!-- menu -->
+              <div
+                id="menu"
+                class="md:hidden flex gap-2 transition-all duration-600 ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                  />
+                </svg>
+                <!-- lak lak -->
+                <img class="w-[30px]" src="assets/images/laklak.png" alt="" />
+              </div>
+              <!-- link items -->
+              <div
+                id="sidebar"
+                class="translate-x-full z-50 md:w-fit md:translate-x-0 md:flex-row absolute md:relative md:h-auto w-[280px] h-screen md:items-center duration-600 ease-in-out top-0 right-0 md:bg-transparent text-navlinks flex bg-white items-center text-right flex-col"
+              >
+                <div
+                  class="flex md:hidden w-full bg-white items-center flex-row justify-between py-8 px-4"
+                >
+                  <a href="#">
+                    <p class="font-bold font-sans text-lg">
+                      Nanakar<span class="text-yellow-500">gold</span>
+                    </p></a
+                  >
+                  <a class="close-menu" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="w-full h-[1px] md:hidden bg-slate-300"></div>
+                <!-- links -->
+                <div class="w-full md:w-auto whitespace-nowrap">
+                  <ul
+                    class="w-full overflow-y-auto justify-around flex flex-col md:gap-x-6 md:mt-0 py-4 px-5 md:p-0 md:flex-row md:flex text-right"
+                  >
+                    <li onclick="hideMenu()" class="mr-3 md:mr-0 md:hidden">
+                      <a
+                        id="home"
+                        href="index.html"
+                        class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                          />
+                        </svg>
+                        خانه
+                      </a>
+                    </li>
+                    <li
+                      onclick="hideMenu()"
+                      id="table"
+                      class="mr-3 md:mr-0 transition ease-linear duration-1000"
+                    >
+                      <a
+                        href="index.html"
+                        class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
+                          />
+                        </svg>
+
+                        تابلو
+                      </a>
+                    </li>
+                    <li onclick="hideMenu()" class="mr-3 md:mr-0">
+                      <a
+                        href="index.html#products"
+                        id="product"
+                        class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                          />
+                        </svg>
+                        محصولات</a
+                      >
+                    </li>
+                    <li onclick="hideMenu()" id="aboutMe" class="mr-3 md:mr-0">
+                      <a
+                        href="index.html#about-us"
+                        class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                          />
+                        </svg>
+                        درباره ما</a
+                      >
+                    </li>
+                    <li onclick="hideMenu()" class="mr-3 md:mr-0">
+                      <a
+                        href="https://tracking.post.ir/"
+                        id=""
+                        class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                          />
+                        </svg>
+
+                        رهگیری سفارش</a
+                      >
+                    </li>
+                    <li onclick="hideMenu()" id="contact" class="mr-3 md:mr-0">
+                      <a
+                        href="index.html#contact-us"
+                        class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                          ></path>
+                        </svg>
+                        ارتباط با ما</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- logo -->
+              <div class="w-12 md:w-16 md:order-first">
+                <a href="https://nanakargold.ir/"
+                  ><img class="" src="assets/images/mainlogo.png" alt="Logo"
+                /></a>
+              </div>
+
+              <!-- desktop Brand name -->
+              <div class="hidden md:flex whitespace-nowrap font-sans font-bold">
+                <a href="#">
+                  <p class="font-bold font-sans text-2xl">
+                    Nanakar <span class="text-yellow-500">gold</span>
+                  </p></a
+                >
+              </div>
+            </nav>
+            <!-- backdrop -->
+            <div
+              id="backdrop"
+              class="w-screen top-0 bottom-0 hidden md:hidden fixed h-screen z-20 bg-black opacity-30"
+            ></div>
+          </header>
+
+          <main>
+            <!-- form -->
+            <section class="mt-5 sm:mt-8 mx-auto max-w-7xl md:mt-10">
+              <div
+                class="flex flex-col items-center mx-auto justify-center min-h-screen"
+              >
+                <div
+                  class="flex p-8 max-w-2xl w-full flex-col gap-3 justify-center sm:justify-between items-center sm:flex-row-reverse sm:gap-5"
+                >
+                  <img
+                    class="min-h-[100px] md:h-[200px] sm:w-[200px] max-w-[100px] sm:max-w-[200px] rounded-full ring"
+                    src="assets/images/test.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="flex flex-col items-center sm:items-start justify-center gap-4"
+                  >
+                    <p
+                      class="font-bold md:text-[28px] sm:text-[20px] text-sloganPrimary"
+                    >
+                      نام محصول: <span>النگوی طرح جدید</span>
+                    </p>
+                    <p
+                      class="font-bold md:text-[28px] sm:text-[20px] text-sloganPrimary"
+                    >
+                      کد محصول: <span>2</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- start form inputs -->
+                <div
+                  class="flex items-center px-8 w-full max-w-3xl mx-auto lg:px-12 lg:w-3/5"
+                >
+                  <div class="w-full">
+                    <p class="mt-4 text-gray-500"></p>
+
+                    <form class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
+                      <div>
+                        <label
+                          for="name"
+                          class="block mb-2 text-base text-gray-600"
+                          >نام <span class="text-red-600">*</span></label
+                        >
+                        <input
+                          id="name"
+                          type="text"
+                          placeholder="نام خود را وارد کنید"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          for="family"
+                          class="block mb-2 text-base text-gray-600"
+                          >نام خانوادگی
+                          <span class="text-red-600">*</span></label
+                        >
+                        <input
+                          id="family"
+                          type="text"
+                          placeholder="نام خانوادگی خود را وارد کنید"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          for="phone"
+                          class="block mb-2 text-base text-gray-600"
+                          >شماره تلفن <span class="text-red-600">*</span></label
+                        >
+                        <input
+                          id="phone"
+                          type="text"
+                          placeholder="مثلا: 09123456789"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          for="postal"
+                          class="block mb-2 text-base text-gray-600"
+                          >کد پستی <span class="text-red-600">*</span></label
+                        >
+                        <input
+                          type="number"
+                          id="postal"
+                          placeholder="کد پستی خود را وارد کنید"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          for="address"
+                          class="block mb-2 text-base text-gray-600"
+                          >آدرس محل سکونت
+                          <span class="text-red-600">*</span></label
+                        >
+
+                        <textarea
+                          name=""
+                          id="address"
+                          cols="10"
+                          rows="3"
+                          placeholder="مثلا: تهران. خیابان صفری. کوچه حاج نقی. پلاک 96"
+                          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- order button -->
+                <div
+                  class="mt-10 mb-6 md:mt-16 px-8 -z-10 w-full rounded-lg md:max-w-[50%]"
+                >
+                  <button
+                    class="flex items-center gap-2 -z-10 justify-center w-full px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                  >
+                    ثبت سفارش
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="md:w-6 md:h-6 w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      <!-- More components -->
+      <!-- <div
+      x-show="open"
+      class="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60"
+      x-data="{ open: true }"
+    >
+      <div
+        class="bg-gray-800 text-gray-50 text-sm p-3 md:rounded shadow-lg flex justify-between"
+      >
+        <div>
+          👉
+          <a
+            class="hover:underline ml-1"
+            href="https://cruip.com/mosaic/?ref=codepen-cruip-customers-table"
+            target="_blank"
+            >More components on Cruip.com</a
+          >
+        </div>
+        <button
+          class="text-gray-500 hover:text-gray-400 ml-5"
+          @click="open = false"
+        >
+          <span class="sr-only">Close</span>
+          <svg class="w-4 h-4 flex-shrink-0 fill-current" viewBox="0 0 16 16">
+            <path
+              d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div> -->
+      <footer
+        class="mx-auto py-6 md:py-6 md:mt-16 mt-10 w-full bg-gray-200 flex flex-col"
+      >
+        <div
+          class="w-full mb-2 sm:mb-4 flex flex-col md:flex-row md:gap-6 items-center justify-evenly md:py-8 py-2"
+        >
+          <!-- footer logo -->
+          <div
+            class="md:w-1/3 w-full text-sm sm:text-base px-8 flex flex-col gap-4"
+          >
+            <img class="w-20" src="assets/images/mainlogo.png" alt="logo" />
+            <p class="text-gray-600">
+              <span class="font-bold">Nanakar</span
+              ><span class="text-yellow-600 font-bold">Gold</span> یک سایت با
+              پشتیبانی 24 ساعته است که علاوه بر خرید انواع سکه های پارسیان،
+              امامی و... قیمت لحظه ای بازار طلا را نیز میتوانید در طول 24 ساعت
+              شبانه روز مشاهده کنید.
+            </p>
+          </div>
+          <!-- Site sections -->
+          <div
+            class="flex w-full md:w-auto mb-6 md:mb-0 mt-4 md:mt-0 p-4 md:p-0 flex-col gap-2"
+          >
+            <div class="">
+              <span class="list-outside text-base sm:text-xl text-gray-600"
+                >بخش های سایت</span
+              >
+            </div>
+            <div class="">
+              <ul
+                class="text-gray-500 hover:text-yellow-500 text-sm sm:text-base"
+              >
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="/public/index.html">خانه</a>
+                </li>
+              </ul>
+              <ul
+                class="text-gray-500 hover:text-yellow-500 text-sm sm:text-base"
+              >
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="/public/index.html#products">محصولات</a>
+                </li>
+              </ul>
+              <ul
+                class="text-gray-500 hover:text-yellow-500 text-sm sm:text-base"
+              >
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="/public/index.html">تابلو</a>
+                </li>
+              </ul>
+              <ul
+                class="text-gray-500 hover:text-yellow-500 text-sm sm:text-base"
+              >
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="/public/index.html#about-us">درباره ما</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer icons -->
+          <div
+            id="contact-us"
+            class="flex flex-col items-center justify-center gap-2 md:gap-4"
+          >
+            <div
+              class="flex flex-row gap-6 p-2 items-center justify-center md:gap-8"
+            >
+              <!-- telegram -->
+              <div class="flex">
+                <a
+                  class="text-gray-600 flex cursor-pointer flex-col gap-1 items-center justify-center hover:text-blue-600"
+                  href="#"
+                  target="_blank"
+                >
+                  <svg
+                    class="md:w-6 md:h-6 w-5 h-5"
+                    fill="currentColor"
+                    viewbox="0 0 24 24"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xml:space="preserve"
+                    xmlns:serif="http://www.serif.com/"
+                    style="
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 1.41421;
+                    "
+                  >
+                    <path
+                      id="telegram-1"
+                      d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"
+                    />
+                  </svg>
+                  <span class="text-center text-[12px]">Telegram</span>
+                </a>
+              </div>
+              <!-- whats app -->
+              <div class="flex">
+                <a
+                  href="#"
+                  class="text-gray-600 flex cursor-pointer flex-col gap-1 items-center justify-center hover:text-green-600"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="md:w-6 md:h-6 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                    />
+                  </svg>
+                  <span class="text-center text-[12px]">WhatsApp</span>
+                </a>
+              </div>
+
+              <!-- instagram -->
+              <div class="flex">
+                <a
+                  href="https://www.instagram.com/nanakargold.ir"
+                  class="text-gray-600 flex cursor-pointer flex-col gap-1 items-center justify-center hover:text-red-600"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="md:w-6 md:h-6 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                  <span class="text-center text-[12px]">instagram</span>
+                </a>
+              </div>
+            </div>
+            <div class="sm:text-base text-[14px] text-slate-800">
+              <p>راه های ارتباطی :</p>
+            </div>
+          </div>
+        </div>
+        <!-- copy right -->
+        <div class="w-full mx-auto text-center mt-4">
+          <p class="text-gray-500 text-center sm:text-base text-[14px]">
+            © تمامی حقوق برای
+            <a class="font-bold hover:text-yellow-500" href="/public/index.html"
+              >NanakarGold.ir</a
+            >
+            محفوظ است
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </body>
+</html>
